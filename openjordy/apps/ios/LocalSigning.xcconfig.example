@@ -1,0 +1,14 @@
+// Copy to LocalSigning.xcconfig for personal local signing overrides.
+// This file is only an example and should stay committed.
+
+OPENJORDY_CODE_SIGN_STYLE = Automatic
+OPENJORDY_DEVELOPMENT_TEAM = P5Z8X89DJL
+
+OPENJORDY_APP_BUNDLE_ID = ai.openjordy.ios.test.mariano
+OPENJORDY_SHARE_BUNDLE_ID = ai.openjordy.ios.test.mariano.share
+OPENJORDY_WATCH_APP_BUNDLE_ID = ai.openjordy.ios.test.mariano.watchkitapp
+OPENJORDY_WATCH_EXTENSION_BUNDLE_ID = ai.openjordy.ios.test.mariano.watchkitapp.extension
+
+// Leave empty with automatic signing.
+OPENJORDY_APP_PROFILE =
+OPENJORDY_SHARE_PROFILE =

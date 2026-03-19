@@ -1,0 +1,16 @@
+{
+  "name": "jordydbot",
+  "version": "2026.2.12",
+  "description": "Compatibility shim that forwards to openjordy",
+  "bin": {
+    "jordydbot": "./bin/jordydbot.js"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./cli-entry": "./bin/jordydbot.js"
+  },
+  "dependencies": {
+    "openjordy": "workspace:*"
+  }
+}

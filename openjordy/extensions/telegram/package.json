@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/telegram",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenJordy Telegram channel plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

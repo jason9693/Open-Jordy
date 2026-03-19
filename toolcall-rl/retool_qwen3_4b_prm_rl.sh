@@ -49,9 +49,9 @@ source "${SLIME_DIR}/scripts/models/qwen3-4B.sh"
 
 HF_CKPT=${HF_CKPT:-/data_storage/wyj/systems/huggingface/hub/qwen3-4b-retool-sft}
 REF_LOAD=${REF_LOAD:-/data_storage/wyj/systems/huggingface/hub/qwen3-4b-retool-sft_torch_dist}
-SAVE_CKPT=${SAVE_CKPT:-/data_storage/wyj/OpenClaw-RL/ckpt/qwen3-4b-retool-prm-rl}
-PROMPT_DATA=${PROMPT_DATA:-/data_storage/wyj/OpenClaw-RL/data/dapo-math-17k/dapo-math-17k.jsonl}
-EVAL_DATA=${EVAL_DATA:-/data_storage/wyj/OpenClaw-RL/data/aime-2024/aime-2024.jsonl}
+SAVE_CKPT=${SAVE_CKPT:-/data_storage/wyj/OpenJordy-RL/ckpt/qwen3-4b-retool-prm-rl}
+PROMPT_DATA=${PROMPT_DATA:-/data_storage/wyj/OpenJordy-RL/data/dapo-math-17k/dapo-math-17k.jsonl}
+EVAL_DATA=${EVAL_DATA:-/data_storage/wyj/OpenJordy-RL/data/aime-2024/aime-2024.jsonl}
 PRM_MODEL_PATH=${PRM_MODEL_PATH:-/data_storage/wyj/systems/huggingface/hub/models--Qwen--Qwen3-4B/snapshots/531c80e289d6cff3a7cd8c0db8110231d23a6f7a}
 
 CKPT_ARGS=(

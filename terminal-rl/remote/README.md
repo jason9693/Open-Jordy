@@ -22,8 +22,8 @@ A GPU is not required to run the pool server, but may be required by some tasks.
 From a directory of your choice:
 
 ```bash
-git clone https://github.com/Gen-Verse/OpenClaw-RL.git
-cd OpenClaw-RL
+git clone https://github.com/Gen-Verse/OpenJordy-RL.git
+cd OpenJordy-RL
 ```
 
 ### 2. Install dependencies

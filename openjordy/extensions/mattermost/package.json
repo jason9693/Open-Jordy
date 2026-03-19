@@ -1,0 +1,25 @@
+{
+  "name": "@openjordy/mattermost",
+  "version": "2026.3.2",
+  "description": "OpenJordy Mattermost channel plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "mattermost",
+      "label": "Mattermost",
+      "selectionLabel": "Mattermost (plugin)",
+      "docsPath": "/channels/mattermost",
+      "docsLabel": "mattermost",
+      "blurb": "self-hosted Slack-style chat; install the plugin to enable.",
+      "order": 65
+    },
+    "install": {
+      "npmSpec": "@openjordy/mattermost",
+      "localPath": "extensions/mattermost",
+      "defaultChoice": "npm"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/signal",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenJordy Signal channel plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

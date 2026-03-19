@@ -3,7 +3,7 @@
 
 ```bash
 # cuda 12.9 (nvcc -V, nvidia-smi)
-conda create --name openclaw-rl python=3.12
+conda create --name openjordy-rl python=3.12
 
 pip install \
   torch==2.9.1+cu129 \
@@ -11,12 +11,12 @@ pip install \
   torchaudio==2.9.1+cu129 \
   --index-url https://download.pytorch.org/whl/cu129
 
-pip install -r /absolute/path/to/OpenClaw-RL/requirements.txt
+pip install -r /absolute/path/to/OpenJordy-RL/requirements.txt
 
 # DeepEP source is from: https://github.com/deepseek-ai/DeepEP
 pip install -e /absolute/path/to/sgl-workspace/DeepEP --no-build-isolation
 
-pip install -e /absolute/path/to/OpenClaw-RL/slime/slime/backends/megatron_utils/kernels/int4_qat --no-build-isolation
+pip install -e /absolute/path/to/OpenJordy-RL/slime/slime/backends/megatron_utils/kernels/int4_qat --no-build-isolation
 
 # apex
 git clone https://github.com/NVIDIA/apex.git

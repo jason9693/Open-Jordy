@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/open-prose",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenProse VM skill pack plugin (slash command + telemetry).",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

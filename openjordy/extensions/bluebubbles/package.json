@@ -1,0 +1,33 @@
+{
+  "name": "@openjordy/bluebubbles",
+  "version": "2026.3.2",
+  "description": "OpenJordy BlueBubbles channel plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "bluebubbles",
+      "label": "BlueBubbles",
+      "selectionLabel": "BlueBubbles (macOS app)",
+      "detailLabel": "BlueBubbles",
+      "docsPath": "/channels/bluebubbles",
+      "docsLabel": "bluebubbles",
+      "blurb": "iMessage via the BlueBubbles mac app + REST API.",
+      "aliases": [
+        "bb"
+      ],
+      "preferOver": [
+        "imessage"
+      ],
+      "systemImage": "bubble.left.and.text.bubble.right",
+      "order": 75
+    },
+    "install": {
+      "npmSpec": "@openjordy/bluebubbles",
+      "localPath": "extensions/bluebubbles",
+      "defaultChoice": "npm"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/google-gemini-cli-auth",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenJordy Gemini CLI OAuth provider plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

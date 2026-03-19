@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone https://github.com/Gen-Verse/OpenJordy-RL.git .)",
+      "Bash(git init)",
+      "Bash(git remote add origin https://github.com/Gen-Verse/OpenJordy-RL.git)",
+      "Bash(git pull origin main)",
+      "Bash(# Also handle files without common extensions but that are text \\(like Makefile, Dockerfile, Containerfile, LICENSE, etc.\\) find . -not -path ''./.git/*'' -type f \\\\\\( -name ''Makefile'' -o -name ''Dockerfile*'' -o -name ''Containerfile*'' -o -name ''LICENSE'' -o -name ''Podfile'' -o -name ''Gemfile'' -o -name ''.gitignore'' -o -name ''.env*'' -o -name ''*.podman*'' \\\\\\) -print0 | xargs -0 grep -l -i ''jordy'')",
+      "Bash(# Check for any remaining files containing ''jordy'' that we might have missed \\(excluding .git and binary files\\) grep -rl --exclude-dir=''.git'' --binary-files=without-match -i ''jordy'' .)",
+      "Bash(# Handle the remaining files find . -not -path ''./.git/*'' -type f \\\\\\( -name ''*.svg'' -o -name ''*.mdx'' -o -name ''*.go'' -o -name ''*.mod'' -o -name ''*.ps1'' -o -name ''*.xcconfig'' -o -name ''*.kts'' -o -name ''*.pro'' -o -name ''Appfile'' -o -name ''Fastfile'' -o -name ''.dockerignore'' -o -name ''.secrets.baseline'' -o -name ''CNAME'' -o -name ''*.example'' \\\\\\) -print0 | xargs -0 grep -l -i ''jordy'')",
+      "Bash(# Also handle the runtime JS file grep -rl --exclude-dir=''.git'' --binary-files=without-match -i ''jordy'' .)",
+      "Bash(# Verify no more jordy references remain in text files grep -rl --exclude-dir=''.git'' --binary-files=without-match -i ''jordy'' .)",
+      "Bash(# Check what exact claw references remain - likely in syntax highlighting data grep -o ''[^ ]*claw[^ ]*'' ./openclaw/extensions/diffs/assets/viewer-runtime.js)",
+      "Bash(# Check case insensitively grep -oi ''[^ ]*claw[^ ]*'' ./openclaw/extensions/diffs/assets/viewer-runtime.js)",
+      "Bash(git add -A)"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/imessage",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenJordy iMessage channel plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

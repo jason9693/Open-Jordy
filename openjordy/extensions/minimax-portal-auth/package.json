@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/minimax-portal-auth",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenJordy MiniMax Portal OAuth provider plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

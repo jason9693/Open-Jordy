@@ -1,0 +1,17 @@
+// Default signing values for shared/repo builds.
+// Auto-selected local team overrides live in .local-signing.xcconfig (git-ignored).
+// Manual local overrides can go in LocalSigning.xcconfig (git-ignored).
+
+OPENJORDY_CODE_SIGN_STYLE = Manual
+OPENJORDY_DEVELOPMENT_TEAM = Y5PE65HELJ
+
+OPENJORDY_APP_BUNDLE_ID = ai.openjordy.ios
+OPENJORDY_SHARE_BUNDLE_ID = ai.openjordy.ios.share
+
+OPENJORDY_APP_PROFILE = ai.openjordy.ios Development
+OPENJORDY_SHARE_PROFILE = ai.openjordy.ios.share Development
+
+// Keep local includes after defaults: xcconfig is evaluated top-to-bottom,
+// so later assignments in local files override the defaults above.
+#include? ".local-signing.xcconfig"
+#include? "LocalSigning.xcconfig"

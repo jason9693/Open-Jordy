@@ -1,0 +1,28 @@
+{
+  "name": "@openjordy/synology-chat",
+  "version": "2026.3.2",
+  "description": "Synology Chat channel plugin for OpenJordy",
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "synology-chat",
+      "label": "Synology Chat",
+      "selectionLabel": "Synology Chat (Webhook)",
+      "docsPath": "/channels/synology-chat",
+      "docsLabel": "synology-chat",
+      "blurb": "Connect your Synology NAS Chat to OpenJordy with full agent capabilities.",
+      "order": 90
+    },
+    "install": {
+      "npmSpec": "@openjordy/synology-chat",
+      "localPath": "extensions/synology-chat",
+      "defaultChoice": "npm"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@openjordy/irc",
+  "version": "2026.3.2",
+  "description": "OpenJordy IRC channel plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

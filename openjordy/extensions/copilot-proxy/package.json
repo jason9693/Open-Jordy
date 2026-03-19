@@ -1,0 +1,12 @@
+{
+  "name": "@openjordy/copilot-proxy",
+  "version": "2026.3.2",
+  "private": true,
+  "description": "OpenJordy Copilot Proxy provider plugin",
+  "type": "module",
+  "openjordy": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

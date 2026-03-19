@@ -49,7 +49,7 @@ source "${SLIME_DIR}/scripts/models/qwen3-4B.sh"
 
 HF_CKPT=${HF_CKPT:-/data_storage/wyj/systems/huggingface/hub/qwen3-4b-retool-sft}
 REF_LOAD=${REF_LOAD:-/data_storage/wyj/systems/huggingface/hub/qwen3-4b-retool-sft_torch_dist}
-SAVE_CKPT=${SAVE_CKPT:-/data_storage/wyj/OpenClaw-RL/ckpt/qwen3-4b-retool-rl/}
+SAVE_CKPT=${SAVE_CKPT:-/data_storage/wyj/OpenJordy-RL/ckpt/qwen3-4b-retool-rl/}
 RESUME_LOAD=${RESUME_LOAD:-${SAVE_CKPT}}
 # Use the existing run id to continue plotting on the same W&B curve.
 #WANDB_RESUME=${WANDB_RESUME:-must}
@@ -64,7 +64,7 @@ CKPT_ARGS=(
 )
 
 ROLLOUT_ARGS=(
-   --prompt-data /data_storage/wyj/OpenClaw-RL/data/dapo-math-17k/dapo-math-17k.jsonl
+   --prompt-data /data_storage/wyj/OpenJordy-RL/data/dapo-math-17k/dapo-math-17k.jsonl
    --input-key prompt
    --label-key label
    --apply-chat-template
@@ -83,7 +83,7 @@ ROLLOUT_ARGS=(
 
 EVAL_ARGS=(
    --eval-interval 20
-   --eval-prompt-data aime /data_storage/wyj/OpenClaw-RL/data/aime-2024/aime-2024.jsonl
+   --eval-prompt-data aime /data_storage/wyj/OpenJordy-RL/data/aime-2024/aime-2024.jsonl
    --n-samples-per-eval-prompt 16
    --eval-max-response-len 16384
    --eval-max-context-len 32768
